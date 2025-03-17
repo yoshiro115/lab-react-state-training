@@ -1,10 +1,7 @@
 import React, {useState} from 'react'
 
-export const Dice = () => {
-    function randomNumber()
-    {
-       return Math.floor(Math.random() * 5) + 1
-    }
+export const Dice = ({randomNumber}) => {
+    
     const [randomDice, setRandomDice] = useState(randomNumber())
   return (
     <>
